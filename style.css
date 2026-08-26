@@ -8,12 +8,14 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: none;
-    background-color: bisque;
+    min-height: 100vh;
+    background-size: cover;
+    background-image: url("plano_de_fundo.jpg");
+    
 
 }
 
-.container{
+.principal{
     max-width: 800px;
     width: 100%;
     display: flex;
@@ -23,6 +25,17 @@ body{
     gap: 20px;
 
 }
+
+.container{
+    padding: 30px;
+    border: 1px solid rgb(69, 139, 160);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;;
+    
+}
+
+
 h1, h2{
     text-align: center;
     margin: 5px 0;
@@ -34,6 +47,7 @@ h1, h2{
     width: 100%;
     border: 1px solid black;
     border-collapse: collapse;
+    border-radius: 40px;
     
 }
 
@@ -43,12 +57,30 @@ h1, h2{
     background-color: beige;
 }
 
+.tabela-de-conhecimentos th{
+    background-color: rgb(98, 181, 214);
+}
+
 
 .conhecimentos {
     padding: 15px 25px;
-    border: 1px solid black;
     border-radius: 10px;
-    background-color: wheat;
+    background-color: rgb(98, 181, 214);
+}
+
+.conhecimentos:hover{
+    transition: 0.5s;
+    background-color: rgb(33, 149, 202);
+    border: transparent;
+}
+
+.conhecimentos li{
+    width: 30%;
+}
+
+.conhecimentos li:hover{
+    transition: 0.5s;
+    color: aliceblue;
 }
 
 .container h3{
@@ -57,6 +89,21 @@ h1, h2{
 
 .conhecimentos li {
     padding: 7px;
+}
+
+.contato a{
+    text-decoration: none;
+    color: rgb(151, 194, 231);
+}
+
+.contato li{
+    color: aliceblue;
+}
+
+.contato a:hover{
+    transition: 0.3s;
+    text-decoration: underline;
+    color: rgb(219, 224, 230);
 }
 
 footer {
